@@ -97,6 +97,10 @@ html{
     text-align: center;
     position: relative;
 }
+.card:hover{
+    transform: scale(0.9);
+    background-color: rgba(255,255,255,0.5);
+}
 .card img{
     width:100%;
     height: 200px;
@@ -120,4 +124,68 @@ html{
     font-size: 13px;
     font-weight: bold;
     padding: 0.1rem;
+}
+.overlay{
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay-inner{
+    background-color: wheat;
+    width: 700px;
+    height: 550px;
+    padding: 1.5rem;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 1.3rem;
+}
+.overlay-inner .close{
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    background-color: transparent;
+}
+.overlay-inner .inner-box{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.overlay-inner .inner-box img{
+    margin-right: 20px;
+    width: 150px;
+    height: 200px;
+}
+.overlay-inner .inner-box h3{
+    margin-top: 10px;
+    color: greenyellow;
+}
+.overlay-inner .inner-box h4{
+    color: blueviolet;
+}
+.overlay-inner .inner-box button{
+    outline: none;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #24eded;
+    color: wheat;
+    font-weight: bold;
+    padding: 0.3rem 0.5rem;
+}
+.overlay-inner .description{
+    margin-top: 2rem;
+    text-align: justify;
+    font-size: 13px;
 }
