@@ -5,9 +5,21 @@ import axios from "axios";
 
 export default function Main() {
   const [search, setSearch]=useState("");
+  const options = {
+    method: 'GET',
+    url: 'https://hapi-books.p.rapidapi.com/search/'+search,
+    headers: {
+      'X-RapidAPI-Key': 'f3d509248emsh229f7737fd62c60p17b4d1jsneeecb5fed8ae',
+      'X-RapidAPI-Host': 'hapi-books.p.rapidapi.com'
+    }
+  };
   const searchBook=(evt)=>{
     if(evt.key==="Enter"){
-      console.log("Hello")
+      axios.request(options).then(function (response) {
+      console.log(response.data);
+    }).catch(function (error) {
+      console.error(error);
+    });
     }
   }
   return (
