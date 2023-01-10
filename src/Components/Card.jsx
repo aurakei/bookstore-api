@@ -22,7 +22,7 @@ export default function Card({ book }) {
                                 <div className="bottom">
                                     <h3 className="title"> {title}</h3>
                                     <p className="amount">rating: {rating}</p>
-                                    <p><FaBookReader /></p>
+                                    <a href={read}><FaBookReader /></a>
                                 </div>
                             </div>
                             <Modal show={show} item={bookItem} onClose={()=>setShow(false)}/>
