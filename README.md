@@ -1,3 +1,9 @@
+This project was created by react.
+Its main concept is obtaining books from an API and displaying it to the front end.
+
+For the API, it uses HAPIbooks API
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
